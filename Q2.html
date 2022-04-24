@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>html demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <style>
+      
+  </style>
+</head>
+<body>
+    <div>Name: <input id="name" type="text"></div>
+    <div>City: <select id="city" name="cars">
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Dehradun">Dehradun</option>
+        <option value="Paris">Paris</option>
+        <option value="Washington">Washington</option>
+      </select></div>
+      <button id="btn">button</button>
+      <div class="write"></div>
+    <script>
+        $(document).ready(function(){
+            console.log(0);
+            $("#btn").click(function(){
+                $(".write").text("My name is "+ $("#name").val() +" and I live in " +$("#city").val());
+            });
+        });
+    </script>
+</body>
+</html>

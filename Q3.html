@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>html demo</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <style>
+       .item{
+            display: none;
+        }
+       
+  </style>
+</head>
+<body>
+    <label for="">Name :</label>
+    <input type="text" id="inname" value=""><br>
+    <button id="btnprint">Print</button>
+    <p id="para"></p>
+    <ul id="list" class="item">
+        <li>i like tea</li>
+        <li>i like samoja</li>
+    </ul>
+
+    <script>
+         
+    $("#btnprint").click(function(){
+        $("#para").text("hello!" +$("#inname").val())
+    })
+
+    $("#para").hover(function(){
+        $("#list").removeClass("item")
+    })
+   
+    </script>
+</body>
+</html>
