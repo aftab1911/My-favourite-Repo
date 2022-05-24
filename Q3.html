@@ -22,15 +22,15 @@
     </ul>
 
     <script>
-         
-    $("#btnprint").click(function(){
+        $(document).ready(function(){
+        $("#btnprint").click(function(){
         $("#para").text("hello!" +$("#inname").val())
-    })
+    });
 
     $("#para").hover(function(){
         $("#list").removeClass("item")
-    })
-   
+    });
+});
     </script>
 </body>
 </html>
